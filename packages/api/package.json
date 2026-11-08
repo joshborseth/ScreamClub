@@ -1,0 +1,14 @@
+{
+  "name": "@scream-club/api",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/api.ts",
+    "./signups": "./src/signups/index.ts",
+    "./signups/*": "./src/signups/*.ts",
+    "./site": "./src/site.ts"
+  },
+  "dependencies": {
+    "effect": "catalog:"
+  }
+}
