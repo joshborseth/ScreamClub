@@ -257,7 +257,6 @@ export const view = (model: Model, h: HtmlBuilder<Message>): Document => ({
                     [h.Class('title'), h.Id('sheet-title')],
                     ['Sign-up sheet'],
                   ),
-                  h.p([h.Class('sub label')], ['Add your name in pen']),
                   model.submission._tag === 'Done'
                     ? doneView(h)
                     : formView(model, h),
@@ -270,7 +269,6 @@ export const view = (model: Model, h: HtmlBuilder<Message>): Document => ({
           ),
         ],
       ),
-      h.footer([h.Class('label')], ['Please scream responsibly']),
     ],
   ),
 })
@@ -291,7 +289,7 @@ const heroView = (sheet: SheetState, h: HtmlBuilder<Message>): Html => {
   return h.section(
     [h.Class('hero')],
     [
-      h.div([h.Class('label')], ['Everyone welcome · Bring your lungs']),
+      h.div([h.Class('label')], ['Everyone welcome']),
       h.h1(
         [h.Class('logo')],
         [
@@ -355,7 +353,6 @@ const formView = (model: Model, h: HtmlBuilder<Message>): Html =>
             h.Id(NAME_INPUT_ID),
             h.Name('name'),
             h.Type('text'),
-            h.Placeholder('Loud Larry'),
             h.Autocomplete('name'),
             h.Maxlength(MAX_NAME_CHARS),
             h.Required(true),
@@ -399,12 +396,6 @@ const formView = (model: Model, h: HtmlBuilder<Message>): Html =>
           ),
         ],
       ),
-      h.p(
-        [h.Class('note')],
-        [
-          'The sheet shows your first name and last initial. Your email stays private.',
-        ],
-      ),
       h.button(
         [
           h.Class('btn'),
@@ -446,7 +437,7 @@ const listHeadView = (sheet: SheetState, h: HtmlBuilder<Message>): Html =>
   h.div(
     [h.Class('list-head')],
     [
-      h.span([h.Class('label')], ["Who's screaming"]),
+      h.span([h.Class('label')], ['On the list']),
       h.span([h.Class('label')], [countLabel(sheet)]),
     ],
   )

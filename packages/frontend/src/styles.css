@@ -79,13 +79,12 @@ h1.logo .club { color: var(--terracotta); }
   transform: rotate(-.6deg);
 }
 h2.title {
-  margin: 0;
+  margin: 0 0 22px;
   font-family: Caprasimo, Georgia, serif;
   font-weight: 400;
   font-size: 30px; line-height: 1.05;
   text-transform: uppercase; text-align: center;
 }
-.sub { text-align: center; margin: 8px 0 22px; color: var(--muted); }
 
 /* Form */
 .field { display: block; margin-bottom: 16px; }
@@ -98,7 +97,6 @@ input {
 }
 input::placeholder { color: var(--placeholder); opacity: 1; }
 .trap { position: absolute; left: -9999px; }
-.note { margin: -6px 0 0; font-size: 13px; line-height: 1.4; color: var(--muted); }
 .btn {
   display: block; width: 100%; margin-top: 20px; height: 54px;
   background: var(--forest); color: var(--cream);
@@ -143,4 +141,3 @@ ol.names .n {
   color: var(--muted);
 }
 .load-error { margin: 14px 0 0; font-size: 14px; color: var(--muted); text-align: center; }
-footer { padding: 22px 16px 26px; text-align: center; }
