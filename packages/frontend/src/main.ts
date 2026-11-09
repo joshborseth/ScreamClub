@@ -289,6 +289,10 @@ const heroView = (sheet: SheetState, h: HtmlBuilder<Message>): Html => {
   return h.section(
     [h.Class('hero')],
     [
+      h.div(
+        [h.Class('label')],
+        ['Come as you are. Scream it out. Leave a little lighter.'],
+      ),
       h.h1(
         [h.Class('logo')],
         [
@@ -318,10 +322,6 @@ const heroView = (sheet: SheetState, h: HtmlBuilder<Message>): Html => {
             h.StrokeLinejoin('round'),
           ]),
         ],
-      ),
-      h.p(
-        [h.Class('tagline')],
-        ['Come as you are. Scream it out. Leave a little lighter.'],
       ),
       h.p(
         [h.Class('mantra')],

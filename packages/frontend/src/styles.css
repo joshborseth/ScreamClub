@@ -47,7 +47,6 @@ h1.logo span span { display: inline-block; }
 h1.logo .row { display: block; }
 h1.logo .club { color: var(--terracotta); }
 .squiggle { display: block; width: 100%; max-width: 560px; height: auto; margin: 14px auto 6px; }
-.tagline { margin: 0 auto; max-width: 30ch; font-size: 19px; line-height: 1.4; }
 .mantra { margin: 14px auto 0; max-width: 42ch; font-size: 16px; line-height: 1.5; text-wrap: pretty; }
 .when { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; margin: 22px 0 34px; }
 .chip { padding: 8px 15px; border-radius: 999px; background: var(--peach); }
