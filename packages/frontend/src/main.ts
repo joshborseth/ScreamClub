@@ -289,7 +289,6 @@ const heroView = (sheet: SheetState, h: HtmlBuilder<Message>): Html => {
   return h.section(
     [h.Class('hero')],
     [
-      h.div([h.Class('label')], ['Everyone welcome']),
       h.h1(
         [h.Class('logo')],
         [
@@ -323,6 +322,12 @@ const heroView = (sheet: SheetState, h: HtmlBuilder<Message>): Html => {
       h.p(
         [h.Class('tagline')],
         ['Come as you are. Scream it out. Leave a little lighter.'],
+      ),
+      h.p(
+        [h.Class('mantra')],
+        [
+          'Scream Club is a women-centered space, open to cis and trans women, and anyone who identifies as a woman. You don’t need to look a certain way to belong.',
+        ],
       ),
       h.div(
         [h.Class('when')],
